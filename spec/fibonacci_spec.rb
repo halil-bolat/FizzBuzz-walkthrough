@@ -6,7 +6,7 @@ describe 'fibonacci' do
     @fib = Fibonacci.new
   end
 
-  it "should fibonacci" do
-    @fib.fibonacci
+  it "should display fibonacci numbers" do
+    expect(@fib.fibonacci[1]).to be 1
   end
 end
