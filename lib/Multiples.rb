@@ -26,7 +26,7 @@ class Multiples
     (0..@numbers_array.length-2).each do |i|
       b += @numbers_array[i]
     end
-    puts b
+    b
   end
 
 end
