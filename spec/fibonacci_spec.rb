@@ -6,7 +6,13 @@ describe 'fibonacci' do
     @fib = Fibonacci.new
   end
 
-  it "should display fibonacci numbers" do
-    expect(@fib.fibonacci[1]).to be 1
+  it "should get fibonacci number" do
+    @fib.fibonacci
+    expect(@fib.numbers_array[3]).to be 3
+  end
+
+  it "should get even fibonacci number" do
+    @fib.fibonacci
+    expect(@fib.evennumbers_array[1]).to be 8
   end
 end
